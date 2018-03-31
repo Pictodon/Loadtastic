@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: raleway;
+    src: url('fonts/raleway.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html {
+	height: 100%; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;
+}
+div {
+   font-family: walkway;
+}
+
+* {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	color: #FFF;
+	background-color: #914a00;
+	background-image: url('backgrounds/smoke.png');
+	background-repeat: repeat;
+}
+
+#container {
+	width: 768px;
+	height: auto;
+}
+
+.panel {
+	padding: 10px;
+	background-color: RGBA(0, 0, 0, 0.6); 
+}
+
+#top-content p {
+	font-size: 40px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#floating-content {
+	overflow: auto;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+#left-content {
+	width: 359px;
+	height: 80px;
+	overflow: auto;
+	float: left;
+}
+
+#left-content img {
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+#left-content h1 {
+	font-size: 30px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#left-content p {
+	font-family: raleway;
+}
+
+#left-content #info {
+	float: left;
+	margin-left: 15px;
+}
+
+#right-content {
+	margin-left: 10px;
+	width: 359px;
+	height: 80px;
+	float: left;
+	display: block;
+}
+
+#right-content p:first-child {
+	font-size: 30px;
+	line-height: 33px;
+	vertical-align: middle;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#right-content p:not(:first-child) {
+	font-size: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	font-family: raleway;
+}
+
+#content {
+	margin-top: 10px;
+}
+
+#content p {
+	font-family: raleway;
+	display: inline-block;
+}
+
+#content #percentage {
+	margin-right: 5px;
+}
+
+#bar {
+	width: 0%;
+	height: 14px;
+	background: RGBA(0, 0, 0, 0.5);
+}
+
+#bar-container {
+	width: 100%;
+	height: 14px;
+	margin-top: 10px;
+	background: RGBA(0, 0, 0, 0.6);
+}
